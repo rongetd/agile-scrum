@@ -9,7 +9,7 @@ import com.capgemini.exceptions.InvalidAccountNumberException;
 import com.capgemini.model.Account;
 import com.capgemini.repo.AccountRepo;
 
-public class AccountServiceImpl implements AccountService {
+public class AccountServiceImpl implements AccountService{
 
 	AccountRepo accountRepo;
 	
@@ -18,7 +18,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 	
 	@Override
-	public Account createAccount(int accountNumber, int amount) throws InsufficientInitialBalanceException, AccountNumberAlreadyExists {
+	Account createAccount(int accountNumber,int amount)throws InsufficientInitialBalanceException, AccountNumberAlreadyExists
 		if(amount<500)
 		{
 			throw new InsufficientInitialBalanceException();
