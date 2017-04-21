@@ -1,0 +1,20 @@
+Scenario 1:
+
+	This was related to book library. Provide operations to add/remove/update/delete entities like a member, a book.
+	The system should be able to lend a book to registered members. One of the constraint given was a member can atmost 
+	be given 6 books only at a time.
+
+Scenario 2:
+
+	Create an application to simulate scenario for a bank. There are 2 type of Account currently. Lets say SAVINGS and CURRENT.
+	SAVINGS account can be opened by an individual. CURRENT account can be opened by corporate only.
+	The operations that should be provided by system are
+		Add/remove/update/delete an account.
+		Calculate interest for a given account.
+		in future, new type of account like Loan account, recurring account should be added.
+		
+	In this scenario, they were expecting candidate to talk about 'Separation of concern', 'Open close principle'.
+	Also interviewer asked about how to fit ORM layer in this system.
+	
+	He also asked why do we add a service layer when one can define those operations in bean itself!
+	How service layer is different from DAO layer.

@@ -18,7 +18,7 @@ public class AccountServiceImpl implements AccountService{
 	}
 	
 	@Override
-	Account createAccount(int accountNumber,int amount)throws InsufficientInitialBalanceException, AccountNumberAlreadyExists
+	public	Account createAccount(int accountNumber,int amount)throws InsufficientInitialBalanceException, AccountNumberAlreadyExists
 		if(amount<500)
 		{
 			throw new InsufficientInitialBalanceException();
